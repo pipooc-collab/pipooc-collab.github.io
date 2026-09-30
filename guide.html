@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Step-by-step silenQo guide with real screenshots of notification access, filtering rules, categories, the decision log, and privacy controls.">
+  <title>User guide — silenQo</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="silenQo home"><img src="assets/logo.svg" alt="">silenQo</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="./">Project</a>
+        <a href="guide.html" aria-current="page">User guide</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="index.html#support">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="guide-intro">
+      <div class="shell">
+        <p class="eyebrow">Step-by-step guide</p>
+        <h1>Set up silenQo and make your first rule.</h1>
+        <p class="lead">Follow the screens below to grant access, choose what to filter, and understand each decision. The screenshots come from the running Android app on a test emulator with sample notifications. Android settings may look different on your phone.</p>
+        <p class="screenshot-help">Select any screenshot to open it at full size.</p>
+        <nav class="guide-toc" aria-label="Guide sections">
+          <a href="#access">1. Grant access</a>
+          <a href="#filtering">2. Check filtering</a>
+          <a href="#rules">3. Add a rule</a>
+          <a href="#categories">4. Use categories</a>
+          <a href="#log">5. Read the log</a>
+          <a href="#privacy-controls">6. Control your data</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section" id="access">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">01 · First launch</p>
+          <h2>Review notification access.</h2>
+          <p>Notification access lets silenQo read posted notifications so it can apply your rules. Both your in-app consent and Android's notification-access setting are required.</p>
+        </div>
+        <ol class="guide-instructions">
+          <li>Read <strong>Your notification data</strong> in the app. Open the full privacy policy if you want more detail.</li>
+          <li>Choose <strong>Agree and open Android settings</strong>. In Android's list, select <strong>silenQo</strong> under <strong>Not allowed</strong>.</li>
+          <li>Turn on <strong>Allow notification access</strong>. Android may show a confirmation explaining this powerful permission; review it and choose <strong>Allow</strong> to continue.</li>
+          <li>Return to silenQo. The Home screen should report <strong>Connected and listening</strong>.</li>
+        </ol>
+        <div class="guide-gallery">
+          <figure class="guide-shot">
+            <a href="assets/screenshots/consent-fixed.png" target="_blank" rel="noopener" aria-label="Open the in-app consent screenshot at full size"><img src="assets/screenshots/consent-fixed.png" width="1080" height="2400" alt="silenQo notification-data disclosure explaining access, local processing, and the consent button" loading="lazy"></a>
+            <figcaption>In-app disclosure before Android access.</figcaption>
+          </figure>
+          <figure class="guide-shot">
+            <a href="assets/screenshots/notification-access-list.png" target="_blank" rel="noopener" aria-label="Open the Android notification-access list screenshot at full size"><img src="assets/screenshots/notification-access-list.png" width="1080" height="2400" alt="Android notification-access settings listing silenQo under Not allowed" loading="lazy"></a>
+            <figcaption>Find silenQo in Android's access list.</figcaption>
+          </figure>
+          <figure class="guide-shot">
+            <a href="assets/screenshots/permission-confirm.png" target="_blank" rel="noopener" aria-label="Open the Android permission confirmation screenshot at full size"><img src="assets/screenshots/permission-confirm.png" width="1080" height="2400" alt="Android confirmation asking whether to allow notification access for silenQo" loading="lazy"></a>
+            <figcaption>Review Android's confirmation.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="filtering">
+      <div class="shell guide-step">
+        <div class="guide-copy">
+          <p class="eyebrow">02 · Home</p>
+          <h2>Check the connection, then choose when to filter.</h2>
+          <p>On <strong>Home</strong>, look for <strong>Connected and listening</strong>. If it says <strong>Needs setup</strong>, use <strong>Access settings</strong> to check Android's permission.</p>
+          <ol class="guide-instructions">
+            <li>Create a rule first, using the next step.</li>
+            <li>Turn on <strong>Active filtering</strong> when you want matching notifications muted.</li>
+            <li>With filtering off, notifications stay visible. If log saving is on, matching rules can still appear in the log as <strong>Would block (filtering was off)</strong>.</li>
+          </ol>
+          <p class="guide-note">The switch stays under your control. Granting notification access does not turn active filtering on by itself.</p>
+        </div>
+        <figure class="guide-shot">
+          <a href="assets/screenshots/connected-home.png" target="_blank" rel="noopener" aria-label="Open the Home screen screenshot at full size"><img src="assets/screenshots/connected-home.png" width="1080" height="2400" alt="silenQo Home screen showing Connected and listening and the Active filtering switch off" loading="lazy"></a>
+          <figcaption>The Home screen after access is connected.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="rules">
+      <div class="shell guide-step">
+        <div class="guide-copy">
+          <p class="eyebrow">03 · Rules</p>
+          <h2>Add a word or app rule.</h2>
+          <ol class="guide-instructions">
+            <li>Open the bottom <strong>Rules</strong> tab, then select <strong>Rules</strong> at the top.</li>
+            <li>Tap <strong>Add rule</strong>. Choose a <strong>Rule type</strong>, such as <strong>Block a word or phrase</strong>.</li>
+            <li>Enter a word or short phrase. Use <strong>Applies to</strong> to target <strong>All apps</strong> or one app that silenQo has encountered.</li>
+            <li>Save the rule. The example shown uses the test word <strong>sale</strong>; replace it with your own choice.</li>
+          </ol>
+          <p>You can also choose an allow-word rule, a category rule, or an app-block rule. The menu beside an existing rule lets you edit or remove it.</p>
+        </div>
+        <figure class="guide-shot">
+          <a href="assets/screenshots/rule-example.png" target="_blank" rel="noopener" aria-label="Open the Add rule screenshot at full size"><img src="assets/screenshots/rule-example.png" width="1080" height="2400" alt="Add rule sheet with a sample block word, All apps scope, and Add block rule button" loading="lazy"></a>
+          <figcaption>A sample blocking rule before saving.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="categories">
+      <div class="shell guide-step">
+        <div class="guide-copy">
+          <p class="eyebrow">04 · Categories</p>
+          <h2>Group topics and teach them.</h2>
+          <ol class="guide-instructions">
+            <li>In the bottom <strong>Rules</strong> tab, select <strong>Categories</strong> at the top. Use the category selector to view a built-in or custom topic.</li>
+            <li>Tap <strong>+</strong> to create a category. Add <strong>blocking words</strong> or <strong>allowed words</strong> to give it examples.</li>
+            <li>To apply a category, switch to <strong>Rules</strong>, add a <strong>Category</strong> rule, select the category, and choose <strong>Normal</strong> or <strong>Allow-only</strong> behavior.</li>
+            <li>When you review an expanded decision in the log, you can use its feedback controls to help teach a category.</li>
+          </ol>
+          <p class="guide-note">In Normal mode, blocking words mute matches and allowed words pass. Allow-only mode requires an allowed word or example before it starts blocking unmatched notifications in scope.</p>
+        </div>
+        <figure class="guide-shot">
+          <a href="assets/screenshots/rules-categories.png" target="_blank" rel="noopener" aria-label="Open the Categories screenshot at full size"><img src="assets/screenshots/rules-categories.png" width="1080" height="2400" alt="Categories screen showing a selected Football category, add-word controls, local learning, and terms" loading="lazy"></a>
+          <figcaption>A built-in category with its words and learning status.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="log">
+      <div class="shell guide-step">
+        <div class="guide-copy">
+          <p class="eyebrow">05 · Decision log</p>
+          <h2>See what happened and why.</h2>
+          <ol class="guide-instructions">
+            <li>Open <strong>Log</strong> at the bottom. Leave <strong>Save logs</strong> on if you want local decision history.</li>
+            <li>Switch between <strong>All notifications</strong> and <strong>Blocked</strong>, or narrow the view to an app.</li>
+            <li>Tap a decision to expand it. The example shows <strong>Would block (filtering was off)</strong> because the sample word rule matched while the Home switch was off.</li>
+            <li>Read the matching reason and use the available feedback controls if the decision needs correction.</li>
+          </ol>
+          <p class="guide-note">Only the last seven days appear in the log. Android may delay the background cleanup of older local records.</p>
+        </div>
+        <figure class="guide-shot">
+          <a href="assets/screenshots/log-expanded.png" target="_blank" rel="noopener" aria-label="Open the expanded decision-log screenshot at full size"><img src="assets/screenshots/log-expanded.png" width="1080" height="2400" alt="Decision log with an expanded sample notification showing a matched text rule and Would block while filtering was off" loading="lazy"></a>
+          <figcaption>The expanded log explains the sample rule match.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="privacy-controls">
+      <div class="shell guide-step">
+        <div class="guide-copy">
+          <p class="eyebrow">06 · Your data</p>
+          <h2>Review consent or clear local data.</h2>
+          <p>Scroll down on <strong>Home</strong> to find <strong>Notification data use</strong>. From there you can reopen the disclosure, read the <a href="privacy.html">privacy policy</a>, or withdraw consent.</p>
+          <ul class="guide-instructions">
+            <li><strong>Withdraw consent</strong> stops new notification processing and turns active filtering off. It does not erase data already saved.</li>
+            <li><strong>Delete all local data</strong> removes local rules, categories, learning data, decision history, and preferences after you confirm.</li>
+            <li>You can also revoke Android notification access in system settings at any time.</li>
+          </ul>
+        </div>
+        <figure class="guide-shot">
+          <a href="assets/screenshots/home-privacy.png" target="_blank" rel="noopener" aria-label="Open the Home privacy controls screenshot at full size"><img src="assets/screenshots/home-privacy.png" width="1080" height="2400" alt="Lower Home screen showing Review or withdraw consent, Privacy policy, and Delete all local data controls" loading="lazy"></a>
+          <figcaption>Privacy and deletion controls on Home.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="help">
+      <div class="shell guide-help">
+        <p class="eyebrow">Need help?</p>
+        <h2>Three things to check.</h2>
+        <ul>
+          <li>If Home says <strong>Needs setup</strong>, confirm both in-app consent and Android notification access.</li>
+          <li>If a matching notification stays visible, check the <strong>Active filtering</strong> switch and open its log entry to read the reason.</li>
+          <li>If the log is empty, check <strong>Save logs</strong>. On Samsung devices, the Home screen also links to the <strong>Never sleeping apps</strong> setting for background reliability.</li>
+        </ul>
+        <p>Still stuck? Email <a href="mailto:silenqosupport.agonizing647@simplelogin.com">silenqosupport.agonizing647@simplelogin.com</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>© 2026 pipooQo. silenQo is an independent Android app.</p>
+      <div class="footer-links"><a href="./">Project</a><a href="privacy.html">Privacy policy</a><a href="#main">Back to top</a></div>
+    </div>
+  </footer>
+</body>
+</html>

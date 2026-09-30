@@ -17,6 +17,7 @@ body { margin: 0; background: var(--paper); color: var(--ink); }
 a { color: var(--blue-deep); text-underline-offset: 0.18em; }
 a:hover { color: var(--blue); }
 a:focus-visible { outline: 3px solid #ffb454; outline-offset: 4px; border-radius: 3px; }
+a[href^="mailto:"] { overflow-wrap: anywhere; }
 img { display: block; max-width: 100%; }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { line-height: 1.18; letter-spacing: -0.03em; }
@@ -62,6 +63,7 @@ p, li { max-width: 72ch; }
 .steps li::before { content: "0" counter(steps); display: block; color: var(--blue-deep); font-weight: 800; font-size: 0.9rem; margin-bottom: 0.5rem; }
 .steps strong { display: block; font-size: 1.1rem; margin-bottom: 0.35rem; }
 .steps span { color: var(--muted); }
+.guide-prompt { max-width: none; margin: 2.25rem 0 0; font-weight: 650; }
 .callout { padding: 2rem; border-radius: 24px; background: #172c50; color: #fff; }
 .callout p { color: #d4e1ff; margin-bottom: 0; }
 .callout a { color: #fff; }
@@ -78,10 +80,34 @@ p, li { max-width: 72ch; }
 .document li { margin-bottom: 0.35rem; }
 .document ul { padding-left: 1.35rem; }
 .document .meta { color: var(--muted); font-size: 0.92rem; }
-.draft-note { padding: 0.85rem 1rem; margin-block: 1.8rem; border: 1px solid #dfc274; background: #fff7dd; border-radius: 12px; color: #55420b; }
+
+.guide-intro { padding-block: clamp(3.5rem, 7vw, 6rem); background: linear-gradient(145deg, #f8fbff, #eaf1ff); }
+.guide-intro h1 { max-width: 13ch; }
+.guide-intro .lead { max-width: 68ch; }
+.screenshot-help { color: var(--muted); font-size: 0.92rem; }
+.guide-toc { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 2rem; }
+.guide-toc a { display: inline-block; padding: 0.65rem 0.95rem; background: #fff; border: 1px solid #c9d8f4; border-radius: 999px; font-weight: 700; text-decoration: none; }
+.guide-toc a:hover { background: #eef4ff; }
+.guide-step { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 320px); gap: clamp(2rem, 7vw, 6rem); align-items: start; }
+.guide-copy { padding-top: 0.75rem; }
+.guide-copy p { color: var(--muted); }
+.guide-instructions { max-width: 70ch; padding-left: 1.35rem; margin: 0 0 1.5rem; }
+.guide-instructions li { padding-left: 0.3rem; margin-bottom: 0.85rem; }
+.guide-instructions li::marker { color: var(--blue-deep); font-weight: 800; }
+.guide-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1rem, 3vw, 2.5rem); align-items: start; }
+.guide-shot { width: min(100%, 300px); margin: 0; justify-self: center; }
+.guide-shot a { display: block; overflow: hidden; border: 1px solid #d5dfef; border-radius: 24px; background: #fff; box-shadow: 0 16px 38px rgba(20, 45, 90, 0.12); }
+.guide-shot a:hover { box-shadow: 0 20px 45px rgba(20, 45, 90, 0.19); }
+.guide-shot img { width: 100%; height: auto; }
+.guide-shot figcaption { margin-top: 0.8rem; color: var(--muted); font-size: 0.9rem; text-align: center; }
+.guide-note { padding: 0.9rem 1rem; border-left: 3px solid var(--blue); background: #edf3ff; border-radius: 0 8px 8px 0; }
+.guide-help { max-width: 780px; }
+.guide-help li { margin-bottom: 0.75rem; }
 
 @media (max-width: 760px) {
-  .hero-grid, .cards, .steps { grid-template-columns: 1fr; }
+  .hero-grid, .cards, .steps, .guide-step { grid-template-columns: 1fr; }
+  .guide-gallery { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+  .guide-step .guide-shot { width: min(100%, 290px); }
   .hero-mark { width: 180px; grid-row: 1; }
   .header-inner { padding-block: 0.8rem; align-items: flex-start; flex-direction: column; }
   .nav { gap: 0.5rem 1rem; }
