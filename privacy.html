@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for silenQo, the on-device Android notification filter by pipooQo.">
+  <title>Privacy policy — silenQo</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="silenQo home"><img src="assets/logo.svg" alt="">silenQo</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="./">Project</a>
+        <a href="privacy.html" aria-current="page">Privacy policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="shell document">
+    <p class="eyebrow">pipooQo · silenQo</p>
+    <h1>Privacy policy</h1>
+    <p class="meta">Effective August 5, 2026 · Last updated September 30, 2026</p>
+    <p>silenQo is a notification-filtering application for Android. This policy explains what information the app can access, how that information is used and stored, and the choices available to you.</p>
+    <p><strong>Developer:</strong> pipooQo<br><strong>Privacy contact:</strong> <a href="mailto:silenqosupport.agonizing647@simplelogin.com">silenqosupport.agonizing647@simplelogin.com</a></p>
+
+    <h2>Summary</h2>
+    <p>silenQo processes notification information locally on your device to apply the filtering rules you choose. The app does not declare the Android <code>INTERNET</code> permission and does not transmit notification information, learned category data, rules, or usage history to the developer or third parties. silenQo does not sell or share personal information.</p>
+
+    <h2>Information silenQo can access</h2>
+    <p>If you explicitly consent and then grant notification access in Android Settings, silenQo can access information contained in notifications posted on your device, including:</p>
+    <ul>
+      <li>the sending application's name and package identifier;</li>
+      <li>notification title and text;</li>
+      <li>notification channel and category;</li>
+      <li>posting time; and</li>
+      <li>related Android notification metadata, such as a group key or shortcut identifier when present.</li>
+    </ul>
+    <p>Notification titles and text may contain personal or sensitive information, depending on the applications you use and the notifications they send.</p>
+    <p>silenQo also stores information you create or configure in the app, including filtering rules, category names and terms, category feedback, app preferences, consent status, and locally generated semantic representations used for category matching.</p>
+
+    <h2>How information is used</h2>
+    <p>silenQo uses this information only to provide its on-device features:</p>
+    <ul>
+      <li>evaluate notifications against your filtering rules;</li>
+      <li>mute notifications that match rules while active filtering is enabled;</li>
+      <li>display a local decision history when log saving is enabled;</li>
+      <li>show applications encountered in notifications; and</li>
+      <li>improve category matching from feedback you intentionally provide.</li>
+    </ul>
+    <p>Each notification post is evaluated independently, including a repost of the same notification. To reduce local storage, silenQo can omit repetitive duplicate history rows while still applying the selected filtering rules.</p>
+    <p>silenQo does not use notification information for advertising, marketing, cross-app tracking, profiling for sale, or decisions that produce legal or similarly significant effects.</p>
+
+    <h2>Consent and notification access</h2>
+    <p>silenQo presents an in-app disclosure before directing you to Android's notification-access settings. Notification information is not processed or stored by silenQo unless you affirmatively agree to the disclosure.</p>
+    <p>You can decline consent and continue to view the app. You can also review or withdraw consent from the Home screen. Withdrawing consent immediately prevents silenQo from processing new notifications and turns active filtering off. It also invalidates notification work that has not completed, so it cannot later save notification data or request a notification removal.</p>
+    <p>Withdrawing consent does not automatically erase information already stored on the device. You can erase it using <strong>Delete all local data</strong>. You can separately revoke silenQo's notification access at any time in Android Settings.</p>
+
+    <h2>Local storage and retention</h2>
+    <p>Information handled by silenQo is processed and stored locally within the app's private storage on your Android device.</p>
+    <ul>
+      <li>Notification and decision-history records stop appearing after seven days. WorkManager schedules cleanup every 15 minutes, but Android may delay background work while the device is idle or under system restrictions.</li>
+      <li>Filtering rules, app preferences, custom categories, learned category terms, feedback, and semantic examples remain until you delete the relevant item, use <strong>Delete all local data</strong>, or uninstall the app.</li>
+      <li>Repeating the same category-training action does not create additional local learning weight. A manual change to a learned term remains a manual choice until you change or delete it.</li>
+      <li>Deleting a category removes its related local rules and learning data.</li>
+      <li><strong>Delete all local data</strong> clears the local database and preferences, resets the app to its defaults, turns active filtering off, and coordinates with in-progress notification processing.</li>
+    </ul>
+    <p>Android cloud backup and device-transfer backup are disabled for silenQo, so the app's private data is excluded from those backup mechanisms.</p>
+
+    <h2>Data transmission and sharing</h2>
+    <p>silenQo has no app feature that uploads notification content or the local data described above. The bundled semantic model and ONNX Runtime operate on the device. silenQo does not integrate advertising, analytics, or crash-reporting SDKs that transmit app data.</p>
+    <p>If silenQo is distributed through Google Play, Google may independently process information relating to downloads, purchases, device compatibility, and store usage under Google's own privacy terms. That processing is controlled by Google and is not notification-data transmission by silenQo.</p>
+    <p>This website is hosted by GitHub Pages. It does not include analytics or forms. GitHub may process website visitor information, including IP addresses, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">its privacy statement</a>.</p>
+
+    <h2>Security</h2>
+    <p>silenQo uses Android's private application storage and disables Android backup for its local data. Its lack of the Android <code>INTERNET</code> permission further limits the app's ability to transmit data over the network. No method of device storage is guaranteed to be completely secure, particularly on a device that is compromised, rooted, or accessible to another person.</p>
+
+    <h2>Accounts</h2>
+    <p>silenQo does not provide user accounts and does not require you to register, sign in, or provide the developer with your name, email address, phone number, or payment information.</p>
+
+    <h2>Children's privacy</h2>
+    <p>silenQo is a general-purpose utility and is not specifically designed for or directed to children. silenQo does not knowingly collect information from children or from any other user because it does not transmit user data to the developer.</p>
+
+    <h2>Your choices</h2>
+    <p>You can control silenQo's access and local data at any time by declining or withdrawing in-app consent; revoking notification access in Android Settings; turning active filtering or log saving off; deleting rules, categories, or learned terms; using <strong>Delete all local data</strong>; or uninstalling silenQo.</p>
+    <p>Because silenQo does not receive or maintain a server-side copy of your data, the developer cannot view, export, correct, or delete data on your behalf. Those actions are available directly on your device as described above.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>This policy may be updated if silenQo's features or data practices change. The updated policy will show a revised “Last updated” date. If a change materially affects how notification or other personal information is accessed, used, stored, or shared, silenQo will provide any additional notice or consent required by applicable law or Google Play policy.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions or requests concerning silenQo, contact pipooQo at <a href="mailto:silenqosupport.agonizing647@simplelogin.com">silenqosupport.agonizing647@simplelogin.com</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>© 2026 pipooQo.</p>
+      <div class="footer-links"><a href="./">Project</a><a href="privacy.html">Privacy policy</a></div>
+    </div>
+  </footer>
+</body>
+</html>
