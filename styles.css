@@ -103,6 +103,15 @@ p, li { max-width: 72ch; }
 .guide-note { padding: 0.9rem 1rem; border-left: 3px solid var(--blue); background: #edf3ff; border-radius: 0 8px 8px 0; }
 .guide-help { max-width: 780px; }
 .guide-help li { margin-bottom: 0.75rem; }
+.guide-video { max-width: 960px; margin: 0; }
+.guide-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: 16px; background: #101a2c; }
+.guide-video video:focus-visible, .video-transcript summary:focus-visible { outline: 3px solid #ffb454; outline-offset: 4px; }
+.guide-video figcaption { margin-top: 0.8rem; color: var(--muted); font-size: 0.92rem; }
+.video-download { margin-top: 1rem; }
+.video-transcript { max-width: 80ch; padding: 1rem 1.2rem; border: 1px solid var(--line); border-radius: 12px; background: var(--white); }
+.video-transcript summary { cursor: pointer; color: var(--blue-deep); font-weight: 700; }
+.video-transcript[open] summary { margin-bottom: 1rem; }
+.video-transcript .guide-instructions { margin-bottom: 0; }
 
 @media (max-width: 760px) {
   .hero-grid, .cards, .steps, .guide-step { grid-template-columns: 1fr; }

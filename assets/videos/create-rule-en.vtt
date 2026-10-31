@@ -1,0 +1,74 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.979
+In this guide, we will create a rule that blocks the word promotion,
+
+2
+00:00:03.979 --> 00:00:07.958
+and apply it to just one app.
+
+3
+00:00:07.958 --> 00:00:11.750
+Open Rules from the bottom navigation, then select the Rules tab at the
+
+4
+00:00:11.750 --> 00:00:15.542
+top of the screen.
+
+5
+00:00:15.542 --> 00:00:20.167
+Tap Add rule. This opens the rule editor, where you choose what to
+
+6
+00:00:20.167 --> 00:00:24.792
+block and which app the rule applies to.
+
+7
+00:00:24.792 --> 00:00:28.208
+For this example, choose Block a word or phrase from the Rule type
+
+8
+00:00:28.208 --> 00:00:31.625
+menu.
+
+9
+00:00:31.625 --> 00:00:36.146
+Enter promotion in the Word or phrase field. This is the text the
+
+10
+00:00:36.146 --> 00:00:40.667
+rule will look for in notifications.
+
+11
+00:00:40.667 --> 00:00:47.083
+Tap Applies to and select your app, for example Gmail. All apps applies
+
+12
+00:00:47.083 --> 00:00:53.500
+the rule across apps. Select a specific app to limit its scope.
+
+13
+00:00:53.500 --> 00:00:58.750
+If your app is missing, make sure silenQo has notification access, then let
+
+14
+00:00:58.750 --> 00:01:04.000
+that app send a notification and check the list again.
+
+15
+00:01:04.000 --> 00:01:09.917
+Check that Applies to shows Gmail, then tap Add block rule to save.
+
+16
+00:01:09.917 --> 00:01:15.833
+Keep filtering enabled on Home for the rule to block matching notifications.
+
+17
+00:01:15.833 --> 00:01:21.292
+Your rule now targets notifications containing promotion from Gmail. You can review it
+
+18
+00:01:21.292 --> 00:01:26.750
+under Rules, and tap it later to edit.
+
