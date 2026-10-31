@@ -1,0 +1,69 @@
+WEBVTT
+
+1
+00:00:00.103 --> 00:00:03.629
+The decision log helps you understand how silenQo handled
+
+2
+00:00:03.642 --> 00:00:05.853
+a notification and which rule matched
+
+3
+00:00:08.311 --> 00:00:12.393
+Open Log from the bottom navigation Keep Save logs
+
+4
+00:00:12.406 --> 00:00:15.353
+on if you want notification and decision history stored
+
+5
+00:00:15.366 --> 00:00:15.906
+locally
+
+6
+00:00:18.353 --> 00:00:21.826
+Switch between All notifications and Blocked or open the
+
+7
+00:00:21.839 --> 00:00:24.866
+All apps selector to focus on a particular app.
+
+8
+00:00:27.311 --> 00:00:31.221
+Tap a decision to expand it Read its status
+
+9
+00:00:31.419 --> 00:00:34.708
+the notification text and the reason explaining the matching
+
+10
+00:00:34.721 --> 00:00:35.090
+rule
+
+11
+00:00:37.519 --> 00:00:41.588
+This example says Would block filtering was off The
+
+12
+00:00:41.601 --> 00:00:44.825
+word sale matched a blocking rule but the notification
+
+13
+00:00:44.838 --> 00:00:47.430
+stayed visible because active filtering was off
+
+14
+00:00:49.853 --> 00:00:52.905
+Use the available feedback controls if a decision needs
+
+15
+00:00:52.918 --> 00:00:56.526
+correction Only the last seven days appear in the
+
+16
+00:00:56.539 --> 00:01:00.934
+log Android can delay background cleanup of older local
+
+17
+00:01:00.947 --> 00:01:01.579
+records

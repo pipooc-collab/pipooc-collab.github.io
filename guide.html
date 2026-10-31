@@ -28,7 +28,7 @@
         <p class="eyebrow">Step-by-step guide</p>
         <h1>Set up silenQo and make your first rule.</h1>
         <p class="lead">Follow the screens below to grant access, choose what to filter, and understand each decision. The screenshots come from the running Android app on a test emulator with sample notifications. Android settings may look different on your phone.</p>
-        <p class="screenshot-help">Select any screenshot to open it at full size.</p>
+        <p class="screenshot-help">Each of the six steps includes a video with English narration and captions. Select any screenshot to open it at full size.</p>
         <nav class="guide-toc" aria-label="Guide sections">
           <a href="#access">1. Grant access</a>
           <a href="#filtering">2. Check filtering</a>
@@ -68,6 +68,31 @@
           </figure>
         </div>
       </div>
+      <section class="shell tutorial-video" id="grant-access-video" aria-labelledby="grant-access-title">
+        <div class="section-head">
+          <p class="eyebrow">Video walkthrough · 1 min 10 sec</p>
+          <h3 id="grant-access-title">Watch: grant notification access.</h3>
+          <p>Follow this step with English narration and on-screen captions.</p>
+        </div>
+        <figure class="guide-video">
+          <video controls playsinline preload="none" width="1600" height="900" poster="assets/videos/grant-access-en-poster.jpg" aria-label="Grant notification access: English video tutorial" aria-describedby="grant-access-description">
+            <source src="assets/videos/grant-access-en.mp4" type="video/mp4">
+            <track kind="captions" src="assets/videos/grant-access-en.vtt" srclang="en" label="English">
+            Your browser does not support embedded video. <a href="assets/videos/grant-access-en.mp4">Download the English tutorial</a>.
+          </video>
+          <figcaption id="grant-access-description">A screenshot-based walkthrough. Highlighted controls show where to look; they are not a recording of taps. Android settings may look different on your phone.</figcaption>
+        </figure>
+        <p class="video-download"><a href="assets/videos/grant-access-en.mp4" download>Download the video (MP4, 2.1 MB)</a></p>
+        <details class="video-transcript">
+          <summary>Read the video transcript</summary>
+            <p>Let us set up notification access so silenQo can read posted notifications and apply your rules.</p>
+            <p>On first launch, read Your notification data. Review what silenQo reads, why it is used, and the storage information. Open the full privacy policy for more detail.</p>
+            <p>When you are ready, tap Agree and open Android settings. Your in-app consent and Android notification access are both required.</p>
+            <p>Find silenQo under Not allowed in Android settings and select it. Turn on Allow notification access on the next screen.</p>
+            <p>Android may show a confirmation describing this powerful permission. Read it, then choose Allow to continue. Settings can look different on your phone.</p>
+            <p>Return to silenQo and check Home for Connected and listening. You can now create a rule. Active filtering is a separate switch that you control.</p>
+        </details>
+      </section>
     </section>
 
     <section class="section section-alt" id="filtering">
@@ -88,6 +113,31 @@
           <figcaption>The Home screen after access is connected.</figcaption>
         </figure>
       </div>
+      <section class="shell tutorial-video" id="check-filtering-video" aria-labelledby="check-filtering-title">
+        <div class="section-head">
+          <p class="eyebrow">Video walkthrough · 1 min 05 sec</p>
+          <h3 id="check-filtering-title">Watch: check the connection and control filtering.</h3>
+          <p>Follow this step with English narration and on-screen captions.</p>
+        </div>
+        <figure class="guide-video">
+          <video controls playsinline preload="none" width="1600" height="900" poster="assets/videos/check-filtering-en-poster.jpg" aria-label="Check the connection and control filtering: English video tutorial" aria-describedby="check-filtering-description">
+            <source src="assets/videos/check-filtering-en.mp4" type="video/mp4">
+            <track kind="captions" src="assets/videos/check-filtering-en.vtt" srclang="en" label="English">
+            Your browser does not support embedded video. <a href="assets/videos/check-filtering-en.mp4">Download the English tutorial</a>.
+          </video>
+          <figcaption id="check-filtering-description">A screenshot-based walkthrough. Highlighted controls show where to look; they are not a recording of taps. Android settings may look different on your phone.</figcaption>
+        </figure>
+        <p class="video-download"><a href="assets/videos/check-filtering-en.mp4" download>Download the video (MP4, 1.9 MB)</a></p>
+        <details class="video-transcript">
+          <summary>Read the video transcript</summary>
+            <p>This guide shows how to check the connection and choose when silenQo should filter matching notifications.</p>
+            <p>On Home, look for Connected and listening. If you see Needs setup, use Access settings and check both consent and Android notification access.</p>
+            <p>Create a rule before switching filtering on. Open Rules, choose the Rules tab, and add a word, category, or app rule.</p>
+            <p>Return to Home and turn on Active filtering when you want matching notifications muted. The screenshot shown here has the switch off.</p>
+            <p>With filtering off, notifications stay visible. If Save logs is on, the log can show Would block, filtering was off, when a rule matches.</p>
+            <p>Turn Active filtering off whenever you want to stop blocking. Granting notification access does not switch filtering on by itself.</p>
+        </details>
+      </section>
     </section>
 
     <section class="section" id="rules">
@@ -108,7 +158,7 @@
           <figcaption>A sample blocking rule before saving.</figcaption>
         </figure>
       </div>
-      <section class="shell rule-video" id="video-tutorial" aria-labelledby="video-title">
+      <section class="shell tutorial-video" id="video-tutorial" aria-labelledby="video-title">
         <div class="section-head">
           <p class="eyebrow">Video walkthrough · 1 min 27 sec</p>
           <h3 id="video-title">Watch: create a rule and choose its app.</h3>
@@ -156,6 +206,32 @@
           <figcaption>A built-in category with its words and learning status.</figcaption>
         </figure>
       </div>
+      <section class="shell tutorial-video" id="use-categories-video" aria-labelledby="use-categories-title">
+        <div class="section-head">
+          <p class="eyebrow">Video walkthrough · 1 min 26 sec</p>
+          <h3 id="use-categories-title">Watch: use categories and teach them.</h3>
+          <p>Follow this step with English narration and on-screen captions.</p>
+        </div>
+        <figure class="guide-video">
+          <video controls playsinline preload="none" width="1600" height="900" poster="assets/videos/use-categories-en-poster.jpg" aria-label="Use categories and teach them: English video tutorial" aria-describedby="use-categories-description">
+            <source src="assets/videos/use-categories-en.mp4" type="video/mp4">
+            <track kind="captions" src="assets/videos/use-categories-en.vtt" srclang="en" label="English">
+            Your browser does not support embedded video. <a href="assets/videos/use-categories-en.mp4">Download the English tutorial</a>.
+          </video>
+          <figcaption id="use-categories-description">A screenshot-based walkthrough. Highlighted controls show where to look; they are not a recording of taps. Android settings may look different on your phone.</figcaption>
+        </figure>
+        <p class="video-download"><a href="assets/videos/use-categories-en.mp4" download>Download the video (MP4, 2.5 MB)</a></p>
+        <details class="video-transcript">
+          <summary>Read the video transcript</summary>
+            <p>Categories help you organize topics, add words, and learn from notification examples. Here is how to get started.</p>
+            <p>Open Rules in the bottom navigation, then choose Categories at the top. Use the selector to choose a built-in or custom topic.</p>
+            <p>To create your own category, tap the plus beside the category selector. Enter a category name, then choose Create category.</p>
+            <p>Use Add blocking word for text to mute, or Add allowed word for text that should pass. Enter a word or phrase and save it.</p>
+            <p>Adding words does not create a category rule. Switch to Rules, tap Add rule, choose Category, and select your category and the app scope.</p>
+            <p>Normal mode blocks blocking words and lets unmatched notifications pass. Allow-only needs an allowed word or example before it starts blocking unmatched notifications in scope. Save the category rule.</p>
+            <p>Open Log and expand a notification. Use the available feedback controls to add an example to a category. Review your category words as you refine its behavior.</p>
+        </details>
+      </section>
     </section>
 
     <section class="section" id="log">
@@ -176,6 +252,31 @@
           <figcaption>The expanded log explains the sample rule match.</figcaption>
         </figure>
       </div>
+      <section class="shell tutorial-video" id="read-log-video" aria-labelledby="read-log-title">
+        <div class="section-head">
+          <p class="eyebrow">Video walkthrough · 1 min 04 sec</p>
+          <h3 id="read-log-title">Watch: read and understand the decision log.</h3>
+          <p>Follow this step with English narration and on-screen captions.</p>
+        </div>
+        <figure class="guide-video">
+          <video controls playsinline preload="none" width="1600" height="900" poster="assets/videos/read-log-en-poster.jpg" aria-label="Read and understand the decision log: English video tutorial" aria-describedby="read-log-description">
+            <source src="assets/videos/read-log-en.mp4" type="video/mp4">
+            <track kind="captions" src="assets/videos/read-log-en.vtt" srclang="en" label="English">
+            Your browser does not support embedded video. <a href="assets/videos/read-log-en.mp4">Download the English tutorial</a>.
+          </video>
+          <figcaption id="read-log-description">A screenshot-based walkthrough. Highlighted controls show where to look; they are not a recording of taps. Android settings may look different on your phone.</figcaption>
+        </figure>
+        <p class="video-download"><a href="assets/videos/read-log-en.mp4" download>Download the video (MP4, 1.8 MB)</a></p>
+        <details class="video-transcript">
+          <summary>Read the video transcript</summary>
+            <p>The decision log helps you understand how silenQo handled a notification and which rule matched.</p>
+            <p>Open Log from the bottom navigation. Keep Save logs on if you want notification and decision history stored locally.</p>
+            <p>Switch between All notifications and Blocked, or open the All apps selector to focus on a particular app.</p>
+            <p>Tap a decision to expand it. Read its status, the notification text, and the reason explaining the matching rule.</p>
+            <p>This example says Would block, filtering was off. The word sale matched a blocking rule, but the notification stayed visible because active filtering was off.</p>
+            <p>Use the available feedback controls if a decision needs correction. Only the last seven days appear in the log. Android can delay background cleanup of older local records.</p>
+        </details>
+      </section>
     </section>
 
     <section class="section section-alt" id="privacy-controls">
@@ -195,6 +296,31 @@
           <figcaption>Privacy and deletion controls on Home.</figcaption>
         </figure>
       </div>
+      <section class="shell tutorial-video" id="control-data-video" aria-labelledby="control-data-title">
+        <div class="section-head">
+          <p class="eyebrow">Video walkthrough · 1 min 14 sec</p>
+          <h3 id="control-data-title">Watch: review consent and control your data.</h3>
+          <p>Follow this step with English narration and on-screen captions.</p>
+        </div>
+        <figure class="guide-video">
+          <video controls playsinline preload="none" width="1600" height="900" poster="assets/videos/control-data-en-poster.jpg" aria-label="Review consent and control your data: English video tutorial" aria-describedby="control-data-description">
+            <source src="assets/videos/control-data-en.mp4" type="video/mp4">
+            <track kind="captions" src="assets/videos/control-data-en.vtt" srclang="en" label="English">
+            Your browser does not support embedded video. <a href="assets/videos/control-data-en.mp4">Download the English tutorial</a>.
+          </video>
+          <figcaption id="control-data-description">A screenshot-based walkthrough. Highlighted controls show where to look; they are not a recording of taps. Android settings may look different on your phone.</figcaption>
+        </figure>
+        <p class="video-download"><a href="assets/videos/control-data-en.mp4" download>Download the video (MP4, 2.1 MB)</a></p>
+        <details class="video-transcript">
+          <summary>Read the video transcript</summary>
+            <p>You can review notification data use, withdraw consent, or clear local data from the Home screen.</p>
+            <p>Open Home and scroll down to Notification data use. This area shows your consent status and links to the disclosure and privacy policy.</p>
+            <p>Tap Review or withdraw consent to reopen the disclosure. Use Privacy policy to read the full policy before deciding whether to continue.</p>
+            <p>To stop new processing, open the disclosure and choose Withdraw consent and turn filtering off. This stops new notification processing and turns active filtering off. It does not erase saved data.</p>
+            <p>To clear saved data, choose Delete all local data on Home. Review the confirmation. Delete everything removes local rules, categories, learning data, history, and preferences.</p>
+            <p>Choose Cancel if you do not want to delete your data. You can also revoke Android notification access in system settings at any time.</p>
+        </details>
+      </section>
     </section>
 
     <section class="section" id="help">

@@ -1,0 +1,69 @@
+WEBVTT
+
+1
+00:00:00.103 --> 00:00:02.458
+This guide shows how to check the connection and
+
+2
+00:00:02.471 --> 00:00:06.024
+choose when silenQo should filter matching notifications
+
+3
+00:00:08.478 --> 00:00:12.099
+On Home look for Connected and listening If you
+
+4
+00:00:12.112 --> 00:00:15.309
+see Needs setup use Access settings and check both
+
+5
+00:00:15.322 --> 00:00:18.007
+consent and Android notification access
+
+6
+00:00:20.478 --> 00:00:24.599
+Create a rule before switching filtering on Open Rules
+
+7
+00:00:24.783 --> 00:00:27.770
+choose the Rules tab and add a word category
+
+8
+00:00:27.941 --> 00:00:28.836
+or app rule
+
+9
+00:00:31.269 --> 00:00:34.006
+Return to Home and turn on Active filtering when
+
+10
+00:00:34.019 --> 00:00:38.496
+you want matching notifications muted The screenshot shown here
+
+11
+00:00:38.509 --> 00:00:39.627
+has the switch off
+
+12
+00:00:42.061 --> 00:00:46.879
+With filtering off notifications stay visible If Save logs
+
+13
+00:00:46.893 --> 00:00:49.669
+is on the log can show Would block filtering
+
+14
+00:00:49.682 --> 00:00:51.550
+was off when a rule matches
+
+15
+00:00:53.978 --> 00:00:56.636
+Turn Active filtering off whenever you want to stop
+
+16
+00:00:56.649 --> 00:01:01.414
+blocking Granting notification access does not switch filtering on
+
+17
+00:01:01.428 --> 00:01:02.257
+by itself
