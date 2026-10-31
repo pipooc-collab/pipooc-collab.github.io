@@ -30,7 +30,6 @@
         <p class="lead">Follow the screens below to grant access, choose what to filter, and understand each decision. The screenshots come from the running Android app on a test emulator with sample notifications. Android settings may look different on your phone.</p>
         <p class="screenshot-help">Select any screenshot to open it at full size.</p>
         <nav class="guide-toc" aria-label="Guide sections">
-          <a href="#video-tutorial">Watch the tutorial</a>
           <a href="#access">1. Grant access</a>
           <a href="#filtering">2. Check filtering</a>
           <a href="#rules">3. Add a rule</a>
@@ -38,37 +37,6 @@
           <a href="#log">5. Read the log</a>
           <a href="#privacy-controls">6. Control your data</a>
         </nav>
-      </div>
-    </section>
-
-    <section class="section" id="video-tutorial" aria-labelledby="video-title">
-      <div class="shell">
-        <div class="section-head">
-          <p class="eyebrow">Video walkthrough · 1 min 27 sec</p>
-          <h2 id="video-title">Create a rule and choose its app.</h2>
-          <p>Watch how to block the word <strong>promotion</strong> for one app, using Gmail as an example. Includes English narration and on-screen captions.</p>
-        </div>
-        <figure class="guide-video">
-          <video controls playsinline preload="none" width="1600" height="900" poster="assets/videos/create-rule-en-poster.jpg" aria-label="Create a rule and choose its app: English video tutorial" aria-describedby="video-description">
-            <source src="assets/videos/create-rule-en.mp4" type="video/mp4">
-            <track kind="captions" src="assets/videos/create-rule-en.vtt" srclang="en" label="English">
-            Your browser does not support embedded video. <a href="assets/videos/create-rule-en.mp4">Download the English tutorial</a>.
-          </video>
-          <figcaption id="video-description">A screenshot-based walkthrough with an illustrated app picker. Gmail is an example; choose your own app in silenQo.</figcaption>
-        </figure>
-        <p class="video-download"><a href="assets/videos/create-rule-en.mp4" download>Download the video (MP4, 2.3 MB)</a></p>
-        <details class="video-transcript">
-          <summary>Read the video transcript</summary>
-          <ol class="guide-instructions">
-            <li>Open <strong>Rules</strong> from the bottom navigation, then select the <strong>Rules</strong> tab at the top.</li>
-            <li>Tap <strong>Add rule</strong>. Choose <strong>Block a word or phrase</strong> from the <strong>Rule type</strong> menu.</li>
-            <li>Enter <strong>promotion</strong> in <strong>Word or phrase</strong>. This is the text the rule looks for in notifications.</li>
-            <li>Open <strong>Applies to</strong> and select your app, such as <strong>Gmail</strong>. Choosing <strong>All apps</strong> applies the rule across apps.</li>
-            <li>If your app is missing, make sure silenQo has notification access, then let that app send a notification and check the list again.</li>
-            <li>Check the selected app and tap <strong>Add block rule</strong>. Keep <strong>Active filtering</strong> enabled on Home to block matching notifications.</li>
-            <li>The rule now targets notifications containing <strong>promotion</strong> from the selected app. Review it under <strong>Rules</strong> and tap it to edit.</li>
-          </ol>
-        </details>
       </div>
     </section>
 
@@ -140,6 +108,34 @@
           <figcaption>A sample blocking rule before saving.</figcaption>
         </figure>
       </div>
+      <section class="shell rule-video" id="video-tutorial" aria-labelledby="video-title">
+        <div class="section-head">
+          <p class="eyebrow">Video walkthrough · 1 min 27 sec</p>
+          <h3 id="video-title">Watch: create a rule and choose its app.</h3>
+          <p>Watch how to block the word <strong>promotion</strong> for one app, using Gmail as an example. Includes English narration and on-screen captions.</p>
+        </div>
+        <figure class="guide-video">
+          <video controls playsinline preload="none" width="1600" height="900" poster="assets/videos/create-rule-en-poster.jpg" aria-label="Create a rule and choose its app: English video tutorial" aria-describedby="video-description">
+            <source src="assets/videos/create-rule-en.mp4" type="video/mp4">
+            <track kind="captions" src="assets/videos/create-rule-en.vtt" srclang="en" label="English">
+            Your browser does not support embedded video. <a href="assets/videos/create-rule-en.mp4">Download the English tutorial</a>.
+          </video>
+          <figcaption id="video-description">A screenshot-based walkthrough with an illustrated app picker. Gmail is an example; choose your own app in silenQo.</figcaption>
+        </figure>
+        <p class="video-download"><a href="assets/videos/create-rule-en.mp4" download>Download the video (MP4, 2.3 MB)</a></p>
+        <details class="video-transcript">
+          <summary>Read the video transcript</summary>
+          <ol class="guide-instructions">
+            <li>Open <strong>Rules</strong> from the bottom navigation, then select the <strong>Rules</strong> tab at the top.</li>
+            <li>Tap <strong>Add rule</strong>. Choose <strong>Block a word or phrase</strong> from the <strong>Rule type</strong> menu.</li>
+            <li>Enter <strong>promotion</strong> in <strong>Word or phrase</strong>. This is the text the rule looks for in notifications.</li>
+            <li>Open <strong>Applies to</strong> and select your app, such as <strong>Gmail</strong>. Choosing <strong>All apps</strong> applies the rule across apps.</li>
+            <li>If your app is missing, make sure silenQo has notification access, then let that app send a notification and check the list again.</li>
+            <li>Check the selected app and tap <strong>Add block rule</strong>. Keep <strong>Active filtering</strong> enabled on Home to block matching notifications.</li>
+            <li>The rule now targets notifications containing <strong>promotion</strong> from the selected app. Review it under <strong>Rules</strong> and tap it to edit.</li>
+          </ol>
+        </details>
+      </section>
     </section>
 
     <section class="section section-alt" id="categories">

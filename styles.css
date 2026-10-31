@@ -103,6 +103,7 @@ p, li { max-width: 72ch; }
 .guide-note { padding: 0.9rem 1rem; border-left: 3px solid var(--blue); background: #edf3ff; border-radius: 0 8px 8px 0; }
 .guide-help { max-width: 780px; }
 .guide-help li { margin-bottom: 0.75rem; }
+.rule-video { margin-top: 3rem; }
 .guide-video { max-width: 960px; margin: 0; }
 .guide-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: 16px; background: #101a2c; }
 .guide-video video:focus-visible, .video-transcript summary:focus-visible { outline: 3px solid #ffb454; outline-offset: 4px; }
